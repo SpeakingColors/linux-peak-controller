@@ -1,5 +1,7 @@
 # Linux Peak Controller 🐈
 
+<img src="assets/icon.svg" width="96" align="right" alt="icon">
+
 Controller plugin for the Novation Peak on Linux.
 
 ## Status
