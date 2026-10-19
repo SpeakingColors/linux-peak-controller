@@ -5,7 +5,7 @@
 Controller plugin for the Novation Peak on Linux.
 
 ## Status
-Early work in progress. Free and open source. Donations welcome (link coming).
+Early work in progress. Free and open source. Donations welcome: https://ko-fi.com/studio87
 
 ## Docs
 - [Interactive mockups](docs/README.md)
