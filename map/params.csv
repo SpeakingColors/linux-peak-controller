@@ -1,0 +1,164 @@
+id,group,name,kind,a,b,min,max,def,range_src,hw
+nrpn_0_0,Voice and glide,Patch Category,nrpn,0,0,0,14,0,manual,0
+nrpn_0_1,Voice and glide,Patch Genre,nrpn,0,1,0,9,0,manual,0
+nrpn_0_2,Voice and glide,Voice Mode,nrpn,0,2,0,4,3,manual,0
+nrpn_0_3,Voice and glide,Voice Unison,nrpn,0,3,0,4,0,manual,0
+nrpn_0_4,Voice and glide,Voice Unison Detune,nrpn,0,4,0,127,25,manual,0
+nrpn_0_5,Voice and glide,Voice Unison Spread,nrpn,0,5,0,127,0,manual,0
+nrpn_0_6,Voice and glide,Voice Keyboard Octave,nrpn,0,6,61,67,64,manual,0
+cc_5,Voice and glide,Glide Time,cc,5,0,0,127,0,manual,0
+nrpn_0_7,Voice and glide,Voice Pre-Glide,nrpn,0,7,52,76,64,manual,0
+cc_35,Voice and glide,Glide On,cc,35,0,0,1,0,manual,0
+nrpn_0_9,Oscillator common,Divergence,nrpn,0,9,0,127,0,manual,0
+nrpn_0_10,Oscillator common,Drift,nrpn,0,10,0,127,0,manual,0
+nrpn_0_11,Oscillator common,Noise LPF,nrpn,0,11,0,127,127,manual,0
+nrpn_0_12,Oscillator common,Noise HPF,nrpn,0,12,0,0,0,manual,0
+cc_3,"Oscillators 1, 2, 3",Osc 1 Range,cc,3,0,63,66,63,manual,0
+cc_37,"Oscillators 1, 2, 3",Osc 2 Range,cc,37,0,63,66,63,manual,0
+cc_65,"Oscillators 1, 2, 3",Osc 3 Range,cc,65,0,63,66,63,manual,0
+pair_14_46,"Oscillators 1, 2, 3",Osc 1 Coarse,pair,14,46,0,127,0,assumed,0
+pair_17_49,"Oscillators 1, 2, 3",Osc 2 Coarse,pair,17,49,0,127,0,assumed,0
+pair_20_52,"Oscillators 1, 2, 3",Osc 3 Coarse,pair,20,52,0,127,0,assumed,0
+pair_15_47,"Oscillators 1, 2, 3",Osc 1 Fine,pair,15,47,0,127,0,assumed,0
+pair_18_50,"Oscillators 1, 2, 3",Osc 2 Fine,pair,18,50,0,127,0,assumed,0
+pair_21_53,"Oscillators 1, 2, 3",Osc 3 Fine,pair,21,53,0,127,0,assumed,0
+cc_9,"Oscillators 1, 2, 3",Osc 1 ModEnv2 > Pitch,cc,9,0,1,127,1,manual,0
+cc_38,"Oscillators 1, 2, 3",Osc 2 ModEnv2 > Pitch,cc,38,0,1,127,1,manual,0
+cc_43,"Oscillators 1, 2, 3",Osc 3 ModEnv2 > Pitch,cc,43,0,1,127,1,manual,0
+pair_16_48,"Oscillators 1, 2, 3",Osc 1 LFO2 > Pitch,pair,16,48,0,127,0,assumed,0
+pair_19_51,"Oscillators 1, 2, 3",Osc 2 LFO2 > Pitch,pair,19,51,0,127,0,assumed,0
+pair_22_54,"Oscillators 1, 2, 3",Osc 3 LFO2 > Pitch,pair,22,54,0,127,0,assumed,0
+nrpn_0_14,"Oscillators 1, 2, 3",Osc 1 Wave,nrpn,0,14,0,4,0,manual,0
+nrpn_0_23,"Oscillators 1, 2, 3",Osc 2 Wave,nrpn,0,23,0,4,0,manual,0
+nrpn_0_32,"Oscillators 1, 2, 3",Osc 3 Wave,nrpn,0,32,0,4,0,manual,0
+nrpn_0_15,"Oscillators 1, 2, 3",Osc 1 Wave More (wavetable),nrpn,0,15,4,63,4,manual,0
+nrpn_0_24,"Oscillators 1, 2, 3",Osc 2 Wave More (wavetable),nrpn,0,24,4,63,4,manual,0
+nrpn_0_33,"Oscillators 1, 2, 3",Osc 3 Wave More (wavetable),nrpn,0,33,4,63,4,manual,0
+nrpn_0_16,"Oscillators 1, 2, 3",Osc 1 Shape Source,nrpn,0,16,0,2,0,manual,0
+nrpn_0_25,"Oscillators 1, 2, 3",Osc 2 Shape Source,nrpn,0,25,0,2,0,manual,0
+nrpn_0_34,"Oscillators 1, 2, 3",Osc 3 Shape Source,nrpn,0,34,0,2,0,manual,0
+cc_12,"Oscillators 1, 2, 3",Osc 1 Manual Shape,cc,12,0,0,127,0,manual,0
+cc_39,"Oscillators 1, 2, 3",Osc 2 Manual Shape,cc,39,0,0,127,0,manual,0
+cc_71,"Oscillators 1, 2, 3",Osc 3 Manual Shape,cc,71,0,0,127,0,manual,0
+cc_119,"Oscillators 1, 2, 3",Osc 1 ModEnv1 > Shape,cc,119,0,0,127,0,manual,0
+cc_40,"Oscillators 1, 2, 3",Osc 2 ModEnv1 > Shape,cc,40,0,0,127,0,manual,0
+cc_72,"Oscillators 1, 2, 3",Osc 3 ModEnv1 > Shape,cc,72,0,0,127,0,manual,0
+cc_33,"Oscillators 1, 2, 3",Osc 1 LFO1 > Shape,cc,33,0,0,127,0,manual,0
+cc_41,"Oscillators 1, 2, 3",Osc 2 LFO1 > Shape,cc,41,0,0,127,0,manual,0
+cc_73,"Oscillators 1, 2, 3",Osc 3 LFO1 > Shape,cc,73,0,0,127,0,manual,0
+cc_34,"Oscillators 1, 2, 3",Osc 1 Vsync,cc,34,0,0,127,0,manual,0
+cc_42,"Oscillators 1, 2, 3",Osc 2 Vsync,cc,42,0,0,127,0,manual,0
+cc_44,"Oscillators 1, 2, 3",Osc 3 Vsync,cc,44,0,0,127,0,manual,0
+nrpn_0_17,"Oscillators 1, 2, 3",Osc 1 Saw Density,nrpn,0,17,0,127,0,manual,0
+nrpn_0_26,"Oscillators 1, 2, 3",Osc 2 Saw Density,nrpn,0,26,0,127,0,manual,0
+nrpn_0_35,"Oscillators 1, 2, 3",Osc 3 Saw Density,nrpn,0,35,0,127,0,manual,0
+nrpn_0_18,"Oscillators 1, 2, 3",Osc 1 Saw Density Detune,nrpn,0,18,0,127,0,manual,0
+nrpn_0_27,"Oscillators 1, 2, 3",Osc 2 Saw Density Detune,nrpn,0,27,0,127,0,manual,0
+nrpn_0_36,"Oscillators 1, 2, 3",Osc 3 Saw Density Detune,nrpn,0,36,0,127,0,manual,0
+nrpn_0_19,"Oscillators 1, 2, 3",Osc 1 Fixed Note,nrpn,0,19,0,88,0,manual,0
+nrpn_0_28,"Oscillators 1, 2, 3",Osc 2 Fixed Note,nrpn,0,28,0,88,0,manual,0
+nrpn_0_37,"Oscillators 1, 2, 3",Osc 3 Fixed Note,nrpn,0,37,0,88,0,manual,0
+nrpn_0_20,"Oscillators 1, 2, 3",Osc 1 Bend Range,nrpn,0,20,40,88,40,manual,0
+nrpn_0_29,"Oscillators 1, 2, 3",Osc 2 Bend Range,nrpn,0,29,40,88,40,manual,0
+nrpn_0_38,"Oscillators 1, 2, 3",Osc 3 Bend Range,nrpn,0,38,40,88,40,manual,0
+pair_23_55,Mixer,Osc 1 level,pair,23,55,0,127,0,assumed,0
+pair_24_56,Mixer,Osc 2 level,pair,24,56,0,127,0,assumed,0
+pair_25_57,Mixer,Osc 3 level,pair,25,57,0,127,0,assumed,0
+pair_26_58,Mixer,Ring 1*2,pair,26,58,0,127,0,assumed,0
+pair_27_59,Mixer,Noise level,pair,27,59,0,127,0,assumed,0
+nrpn_0_41,Mixer,Patch Level,nrpn,0,41,0,127,64,manual,0
+nrpn_0_42,Mixer,VCA Gain,nrpn,0,42,0,127,127,manual,0
+nrpn_0_43,Mixer,Dry Level,nrpn,0,43,0,127,127,manual,0
+nrpn_0_44,Mixer,Wet Level,nrpn,0,44,0,127,127,manual,0
+cc_80,Filter,Overdrive,cc,80,0,0,127,0,manual,0
+cc_36,Filter,Post Drive,cc,36,0,0,127,0,manual,0
+nrpn_0_45,Filter,Slope,nrpn,0,45,0,1,1,manual,0
+nrpn_0_46,Filter,Shape,nrpn,0,46,0,2,0,manual,0
+cc_75,Filter,Key Tracking,cc,75,0,0,127,127,manual,0
+cc_79,Filter,Resonance,cc,79,0,0,127,0,manual,0
+pair_29_61,Filter,Frequency,pair,29,61,0,127,0,assumed,0
+pair_28_60,Filter,LFO1 > Filter,pair,28,60,0,127,0,assumed,0
+cc_76,Filter,Osc3 > Filter,cc,76,0,0,127,0,manual,0
+nrpn_0_47,Filter,Env Select,nrpn,0,47,0,1,1,manual,0
+cc_77,Filter,AmpEnv > Filter,cc,77,0,1,127,64,manual,0
+cc_78,Filter,ModEnv1 > Filter,cc,78,0,1,127,64,manual,0
+nrpn_0_48,Filter,Divergence,nrpn,0,48,0,127,0,manual,0
+cc_86,Envelopes,Amp Attack,cc,86,0,0,127,0,assumed,0
+cc_90,Envelopes,Mod 1 Attack,cc,90,0,0,127,0,assumed,0
+cc_94,Envelopes,Mod 2 Attack,cc,94,0,0,127,0,assumed,0
+cc_87,Envelopes,Amp Decay,cc,87,0,0,127,0,assumed,0
+cc_91,Envelopes,Mod 1 Decay,cc,91,0,0,127,0,assumed,0
+cc_95,Envelopes,Mod 2 Decay,cc,95,0,0,127,0,assumed,0
+cc_88,Envelopes,Amp Sustain,cc,88,0,0,127,0,assumed,0
+cc_92,Envelopes,Mod 1 Sustain,cc,92,0,0,127,0,assumed,0
+cc_117,Envelopes,Mod 2 Sustain,cc,117,0,0,127,0,assumed,0
+cc_89,Envelopes,Amp Release,cc,89,0,0,127,0,assumed,0
+cc_93,Envelopes,Mod 1 Release,cc,93,0,0,127,0,assumed,0
+cc_103,Envelopes,Mod 2 Release,cc,103,0,0,127,0,assumed,0
+nrpn_0_55,Envelopes,Amp Velocity,nrpn,0,55,0,127,0,manual,0
+nrpn_0_60,Envelopes,Mod 1 Velocity,nrpn,0,60,0,127,0,manual,0
+nrpn_0_64,Envelopes,Mod 2 Velocity,nrpn,0,64,0,127,0,manual,0
+nrpn_0_56,Envelopes,Amp Trigger,nrpn,0,56,0,1,0,manual,0
+nrpn_0_61,Envelopes,Mod 1 Trigger,nrpn,0,61,0,1,0,manual,0
+nrpn_0_65,Envelopes,Mod 2 Trigger,nrpn,0,65,0,1,0,manual,0
+nrpn_0_68,LFOs 1 and 2,LFO 1 Range,nrpn,0,68,0,2,0,manual,0
+cc_83,LFOs 1 and 2,LFO 2 Range,cc,83,0,0,2,0,manual,0
+pair_30_62,LFOs 1 and 2,LFO 1 Rate,pair,30,62,0,127,0,assumed,0
+pair_31_63,LFOs 1 and 2,LFO 2 Rate,pair,31,63,0,127,0,assumed,0
+cc_81,LFOs 1 and 2,LFO 1 Sync Rate,cc,81,0,0,34,0,manual,0
+cc_84,LFOs 1 and 2,LFO 2 Sync Rate,cc,84,0,0,34,0,manual,0
+nrpn_0_69,LFOs 1 and 2,LFO 1 Wave,nrpn,0,69,0,3,0,manual,0
+nrpn_0_78,LFOs 1 and 2,LFO 2 Wave,nrpn,0,78,0,3,0,manual,0
+nrpn_0_70,LFOs 1 and 2,LFO 1 Phase,nrpn,0,70,0,120,0,manual,0
+nrpn_0_79,LFOs 1 and 2,LFO 2 Phase,nrpn,0,79,0,120,0,manual,0
+nrpn_0_71,LFOs 1 and 2,LFO 1 Slew,nrpn,0,71,0,127,0,manual,0
+nrpn_0_80,LFOs 1 and 2,LFO 2 Slew,nrpn,0,80,0,127,0,manual,0
+cc_82,LFOs 1 and 2,LFO 1 Fade Time,cc,82,0,0,127,0,manual,0
+cc_85,LFOs 1 and 2,LFO 2 Fade Time,cc,85,0,0,127,0,manual,0
+nrpn_0_72,LFOs 1 and 2,LFO 1 Fade In/Out,nrpn,0,72,0,3,0,manual,0
+nrpn_0_81,LFOs 1 and 2,LFO 2 Fade In/Out,nrpn,0,81,0,3,0,manual,0
+nrpn_0_75,LFOs 1 and 2,LFO 1 One Shot,nrpn,0,75,0,1,0,manual,0
+nrpn_0_84,LFOs 1 and 2,LFO 2 One Shot,nrpn,0,84,0,1,0,manual,0
+nrpn_0_76,LFOs 1 and 2,LFO 1 Common,nrpn,0,76,0,1,0,manual,0
+nrpn_0_85,LFOs 1 and 2,LFO 2 Common,nrpn,0,85,0,1,0,manual,0
+cc_104,Effects,Distortion Level,cc,104,0,0,127,0,manual,0
+nrpn_0_88,Effects,Effects Master Bypass,nrpn,0,88,0,1,0,manual,0
+nrpn_0_89,Effects,Effects Routing,nrpn,0,89,0,6,0,manual,0
+cc_108,Effects,Delay Level,cc,108,0,0,127,0,manual,0
+cc_109,Effects,Delay Time,cc,109,0,0,127,64,manual,0
+nrpn_0_92,Effects,Delay Width,nrpn,0,92,0,127,64,manual,0
+nrpn_0_93,Effects,Delay Sync,nrpn,0,93,0,1,0,manual,0
+nrpn_0_94,Effects,Delay Sync Time,nrpn,0,94,0,18,4,manual,0
+cc_110,Effects,Delay Feedback,cc,110,0,0,127,64,manual,0
+nrpn_0_95,Effects,Delay LP Damp,nrpn,0,95,0,127,85,manual,0
+nrpn_0_96,Effects,Delay HP Damp,nrpn,0,96,0,127,0,manual,0
+nrpn_0_97,Effects,Delay Slew Rate,nrpn,0,97,0,127,32,manual,0
+cc_112,Effects,Reverb Level,cc,112,0,0,127,0,manual,0
+nrpn_0_101,Effects,Reverb Type,nrpn,0,101,0,2,2,manual,0
+cc_113,Effects,Reverb Time,cc,113,0,0,127,90,manual,0
+nrpn_0_102,Effects,Reverb Damping LP,nrpn,0,102,0,127,50,manual,0
+nrpn_0_103,Effects,Reverb Damping HP,nrpn,0,103,0,127,1,manual,0
+nrpn_0_104,Effects,Reverb Size,nrpn,0,104,0,127,64,manual,0
+nrpn_0_105,Effects,Reverb Mod,nrpn,0,105,0,127,64,manual,0
+nrpn_0_106,Effects,Reverb Mod Rate,nrpn,0,106,0,127,4,manual,0
+nrpn_0_107,Effects,Reverb Low Pass,nrpn,0,107,0,127,74,manual,0
+nrpn_0_108,Effects,Reverb High Pass,nrpn,0,108,0,127,0,manual,0
+nrpn_0_109,Effects,Reverb Pre Delay,nrpn,0,109,0,127,40,manual,0
+cc_105,Effects,Chorus Level,cc,105,0,0,127,0,manual,0
+nrpn_0_111,Effects,Chorus Type,nrpn,0,111,0,2,2,manual,0
+cc_118,Effects,Chorus Rate,cc,118,0,0,127,20,manual,0
+nrpn_0_112,Effects,Chorus Mod Depth,nrpn,0,112,0,127,64,manual,0
+cc_107,Effects,Chorus Feedback,cc,107,0,0,127,64,manual,0
+nrpn_0_113,Effects,Chorus LP,nrpn,0,113,0,127,90,manual,0
+nrpn_0_114,Effects,Chorus HP,nrpn,0,114,0,127,2,manual,0
+nrpn_0_116,Arpeggiator and Animate,Sync Rate,nrpn,0,116,0,18,16,manual,0
+nrpn_0_117,Arpeggiator and Animate,Type,nrpn,0,117,0,6,0,manual,0
+nrpn_0_118,Arpeggiator and Animate,Rhythm,nrpn,0,118,0,32,0,manual,0
+nrpn_0_119,Arpeggiator and Animate,Octave,nrpn,0,119,0,5,1,manual,0
+cc_116,Arpeggiator and Animate,Gate,cc,116,0,0,127,64,manual,0
+nrpn_0_120,Arpeggiator and Animate,Swing,nrpn,0,120,20,80,50,manual,0
+nrpn_0_121,Arpeggiator and Animate,On,nrpn,0,121,0,1,0,manual,0
+nrpn_0_122,Arpeggiator and Animate,Key Latch,nrpn,0,122,0,1,0,manual,0
+nrpn_0_123,Arpeggiator and Animate,Key Sync,nrpn,0,123,0,1,0,manual,0
+cc_114,Arpeggiator and Animate,Animate 1 Hold,cc,114,0,0,1,0,manual,0
+cc_115,Arpeggiator and Animate,Animate 2 Hold,cc,115,0,0,1,0,manual,0
