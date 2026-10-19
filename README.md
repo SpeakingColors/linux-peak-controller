@@ -5,7 +5,7 @@
 Controller plugin for the Novation Peak (VST3 and standalone; built for Linux first).
 
 ## Status
-**Plugin skeleton, v0.1. No release yet.** A MIDI controller plugin (VST3 and standalone) that sends and receives the CC and NRPN messages listed in [map/params.csv](map/params.csv).
+**Early build v0.1 (pre-release on the Releases page).** A MIDI controller plugin (VST3 and standalone) that sends and receives the CC and NRPN messages listed in [map/params.csv](map/params.csv).
 
 - 145 parameters, taken from: Novation Peak (firmware 1.2 manual). 
 - **None are tested on the real device yet.** The map only holds what the source above lists; ranges the manual does not print are assumed to be 0 to 127 and are marked that way in the plugin.
