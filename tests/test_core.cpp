@@ -49,6 +49,15 @@ int main(int argc, char** argv)
         for (auto& er : real.errors) std::printf("map error: %s\n", er.c_str());
         CHECK(real.errors.empty());
         int hw = 0, usable = 0; for (auto& p : real.params) { hw += p.hwVerified; usable += p.kind != Kind::Pair; }
+        // values checked against the Peak v1.2 user guide, MIDI parameters list
+        auto byId = [&](const char* id) -> const Param* { for (auto& p : real.params) if (p.id == id) return &p; return nullptr; };
+        { auto* q = byId("cc_87"); CHECK(q && q->kind == Kind::CC && q->a == 87 && q->defV == 90 && q->rangeFromManual); }          // Amp Decay
+        { auto* q = byId("cc_88"); CHECK(q && q->defV == 127); }                                                                  // Amp Sustain
+        { auto* q = byId("nrpn_0_59"); CHECK(q && q->kind == Kind::NRPN && q->a == 0 && q->b == 59 && q->maxV == 1); }             // Mod Envelope Select
+        { auto* q = byId("nrpn_0_125"); CHECK(q && q->b == 125 && q->maxV == 15); }                                               // Mod Matrix Slot Select
+        { auto* q = byId("nrpn_16_3"); CHECK(q && q->a == 16 && q->b == 3 && q->maxV == 36); }                                    // slot 16 destination
+        { auto* q = byId("nrpn_5_2"); CHECK(q && q->maxV == 127 && q->defV == 64); }                                              // slot 5 depth
+        { int mm = 0; for (auto& p : real.params) mm += p.group == "Mod matrix"; CHECK(mm == 65); }                               // 16 slots x 4 + select
         std::printf("map: %zu entries, %d usable, %d verified on hardware\n", real.params.size(), usable, hw);
         for (auto& p : real.params) if (p.kind != Kind::Pair)
         { Decoder dd(real.params); std::optional<Event> last; for (auto& msg : encode(p, 1, p.defV)) last = dd.feedCC(msg.d1, msg.d2); CHECK(last && real.params[size_t(last->paramIndex)].id == p.id); }

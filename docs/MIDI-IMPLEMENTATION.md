@@ -1,6 +1,6 @@
 # Novation Peak: MIDI parameters (firmware 1.2)
 
-Source: Novation Peak 1.2 user guide, "MIDI parameters list" (pages 40 to 43). Values are copied as printed in the manual. Check them against the real hardware before relying on them in code. NRPN numbers are written exactly as the manual prints them (for example `0:2`). Rows marked "pair" use two CCs; the manual does not say which is coarse and which is fine, so test it.
+Source tag for every row on this page: official: Novation Peak User Guide for firmware 1.2, "MIDI parameters list" (printed pages 40 to 43). Checked again against the guide's PDF on 2026-11-15: every CC and NRPN number in the plugin's map matches the guide. Nothing here has been tested on real hardware ("untested on hardware"). Novation publishes no SysEx documentation for the Peak, so the plugin sends no SysEx. NRPN numbers are written exactly as the manual prints them (for example `0:2`). Rows marked "pair" use two CCs; the manual does not say which is coarse and which is fine, so test it.
 
 Settings that matter for the controller (Settings menu): MidiChan (default 1), Local, Arp>Midi, CC/NRPN (Disabled, Receive, Transmit, Rec+Tran; default Rec+Tran), Bank/Patch (same options). Patch data is sent as Program Change and Bank Change, not CC/NRPN. Patch backup goes over SysEx (Settings, Backup page).
 
@@ -86,7 +86,7 @@ Settings that matter for the controller (Settings menu): MidiChan (default 1), L
 | Velocity (0-127, -64 to +63) | NRPN 0:55 | NRPN 0:60 | NRPN 0:64 |
 | Trigger (0-1) | NRPN 0:56 | NRPN 0:61 | NRPN 0:65 |
 
-Mod Envelope Select: NRPN 0:59 (0-1). Attack/decay/sustain/release range 0-127. Defaults: Amp 0/90/127/40, Mod 0/75/35/45.
+Mod Envelope Select: NRPN 0:59 (0-1, default 0). Attack/decay/sustain/release range 0-127. Defaults: Amp 0/90/127/40, Mod 0/75/35/45.
 
 ## LFOs 1 and 2
 | Parameter | LFO 1 | LFO 2 | Range |
@@ -168,6 +168,17 @@ Sources: Direct, ModWheel, AftTouch, ExprPED1, BrthPED2, Velocity, Keyboard, Lfo
 Destinations: O123Ptch, Osc1Ptch, Osc2Ptch, Osc3Ptch, Osc1VSnc, Osc2VSnc, Osc3VSnc, Osc1Shpe, Osc2Shpe, Osc3Shpe, Osc1 Lev, Osc2 Lev, Osc3 Lev, NoiseLev, Ring Lev, VcaLevel, Filt Drv, FiltDist, FiltFreq, Filt Res, Lfo1Rate, Lfo2Rate, AmpEnv A/D/R, ModEnv1A/D/R, ModEnv2A/D/R, FM O1>O2, FM O2>O3, FM O3>O1, FM Ns>O1, O3>FiltF, Ns>FiltF. Only positive depth works for the FM destinations.
 
 FX matrix (4 slots) destinations: Dist Lev, Chor Lev, ChorRate, Chor Dep, Chor FB, Del Lev, Del Time, Del FB, Rev Lev, Rev Time, Rev LPF, Rev HPF. Its NRPN numbers are not in the manual's list.
+
+## Notes from the 2026-11-15 check (all official: Peak User Guide 1.2, MIDI parameters list)
+- The guide prints Oscillator 3 Range as 63-66 (-1 to +2) with default "64 (-1)". The raw default and the label do not agree inside the guide. The plugin uses 64 as the starting value for all three oscillator ranges. Untested on hardware.
+- Mod matrix: the guide lists sources as 0-16 but names 23 sources. The plugin uses the printed range 0-16 and does not name sources. The slot number is the NRPN MSB (1 to 16) and the field is the LSB (0 to 3), exactly as printed.
+- CC 38 (Osc 2 ModEnv2 > Pitch) is also the standard MIDI "data entry LSB". The plugin only sends NRPN data on CC 6 and treats CC 38 as a normal control. Whether the Peak mixes the two up after an NRPN message is untested on hardware.
+- The two-CC controls: every pair in the guide is a CC number n and n+32 (for example 14 and 46), which looks like standard MIDI high/low bytes. The guide does not say it, and how a 0-255 value is split is not printed, so the plugin still sends nothing for pairs. UNVERIFIED.
+
+## What the plugin does with MIDI
+- MIDI channel setting (1 to 16, default 1): outgoing messages use it, and incoming controller messages are only read on that channel. Other messages pass through.
+- Restoring a saved project sets the values without sending MIDI. "Send all" sends everything on request.
+- Controllers received from the device move the plugin parameters and are not sent back.
 
 ## Open questions (test on hardware)
 - Which CC of each pair is the high byte.

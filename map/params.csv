@@ -13,9 +13,9 @@ nrpn_0_9,Oscillator common,Divergence,nrpn,0,9,0,127,0,manual,0
 nrpn_0_10,Oscillator common,Drift,nrpn,0,10,0,127,0,manual,0
 nrpn_0_11,Oscillator common,Noise LPF,nrpn,0,11,0,127,127,manual,0
 nrpn_0_12,Oscillator common,Noise HPF,nrpn,0,12,0,0,0,manual,0
-cc_3,"Oscillators 1, 2, 3",Osc 1 Range,cc,3,0,63,66,63,manual,0
-cc_37,"Oscillators 1, 2, 3",Osc 2 Range,cc,37,0,63,66,63,manual,0
-cc_65,"Oscillators 1, 2, 3",Osc 3 Range,cc,65,0,63,66,63,manual,0
+cc_3,"Oscillators 1, 2, 3",Osc 1 Range,cc,3,0,63,66,64,manual,0
+cc_37,"Oscillators 1, 2, 3",Osc 2 Range,cc,37,0,63,66,64,manual,0
+cc_65,"Oscillators 1, 2, 3",Osc 3 Range,cc,65,0,63,66,64,manual,0
 pair_14_46,"Oscillators 1, 2, 3",Osc 1 Coarse,pair,14,46,0,127,0,assumed,0
 pair_17_49,"Oscillators 1, 2, 3",Osc 2 Coarse,pair,17,49,0,127,0,assumed,0
 pair_20_52,"Oscillators 1, 2, 3",Osc 3 Coarse,pair,20,52,0,127,0,assumed,0
@@ -83,18 +83,18 @@ nrpn_0_47,Filter,Env Select,nrpn,0,47,0,1,1,manual,0
 cc_77,Filter,AmpEnv > Filter,cc,77,0,1,127,64,manual,0
 cc_78,Filter,ModEnv1 > Filter,cc,78,0,1,127,64,manual,0
 nrpn_0_48,Filter,Divergence,nrpn,0,48,0,127,0,manual,0
-cc_86,Envelopes,Amp Attack,cc,86,0,0,127,0,assumed,0
-cc_90,Envelopes,Mod 1 Attack,cc,90,0,0,127,0,assumed,0
-cc_94,Envelopes,Mod 2 Attack,cc,94,0,0,127,0,assumed,0
-cc_87,Envelopes,Amp Decay,cc,87,0,0,127,0,assumed,0
-cc_91,Envelopes,Mod 1 Decay,cc,91,0,0,127,0,assumed,0
-cc_95,Envelopes,Mod 2 Decay,cc,95,0,0,127,0,assumed,0
-cc_88,Envelopes,Amp Sustain,cc,88,0,0,127,0,assumed,0
-cc_92,Envelopes,Mod 1 Sustain,cc,92,0,0,127,0,assumed,0
-cc_117,Envelopes,Mod 2 Sustain,cc,117,0,0,127,0,assumed,0
-cc_89,Envelopes,Amp Release,cc,89,0,0,127,0,assumed,0
-cc_93,Envelopes,Mod 1 Release,cc,93,0,0,127,0,assumed,0
-cc_103,Envelopes,Mod 2 Release,cc,103,0,0,127,0,assumed,0
+cc_86,Envelopes,Amp Attack,cc,86,0,0,127,0,manual,0
+cc_90,Envelopes,Mod 1 Attack,cc,90,0,0,127,0,manual,0
+cc_94,Envelopes,Mod 2 Attack,cc,94,0,0,127,0,manual,0
+cc_87,Envelopes,Amp Decay,cc,87,0,0,127,90,manual,0
+cc_91,Envelopes,Mod 1 Decay,cc,91,0,0,127,75,manual,0
+cc_95,Envelopes,Mod 2 Decay,cc,95,0,0,127,75,manual,0
+cc_88,Envelopes,Amp Sustain,cc,88,0,0,127,127,manual,0
+cc_92,Envelopes,Mod 1 Sustain,cc,92,0,0,127,35,manual,0
+cc_117,Envelopes,Mod 2 Sustain,cc,117,0,0,127,35,manual,0
+cc_89,Envelopes,Amp Release,cc,89,0,0,127,40,manual,0
+cc_93,Envelopes,Mod 1 Release,cc,93,0,0,127,45,manual,0
+cc_103,Envelopes,Mod 2 Release,cc,103,0,0,127,45,manual,0
 nrpn_0_55,Envelopes,Amp Velocity,nrpn,0,55,0,127,0,manual,0
 nrpn_0_60,Envelopes,Mod 1 Velocity,nrpn,0,60,0,127,0,manual,0
 nrpn_0_64,Envelopes,Mod 2 Velocity,nrpn,0,64,0,127,0,manual,0
@@ -162,3 +162,69 @@ nrpn_0_122,Arpeggiator and Animate,Key Latch,nrpn,0,122,0,1,0,manual,0
 nrpn_0_123,Arpeggiator and Animate,Key Sync,nrpn,0,123,0,1,0,manual,0
 cc_114,Arpeggiator and Animate,Animate 1 Hold,cc,114,0,0,1,0,manual,0
 cc_115,Arpeggiator and Animate,Animate 2 Hold,cc,115,0,0,1,0,manual,0
+nrpn_0_59,Envelopes,Mod Envelope Select,nrpn,0,59,0,1,0,manual,0
+nrpn_0_125,Mod matrix,Mod Matrix Slot Select,nrpn,0,125,0,15,0,manual,0
+nrpn_1_0,Mod matrix,Mod Slot 1 Source 1,nrpn,1,0,0,16,0,manual,0
+nrpn_1_1,Mod matrix,Mod Slot 1 Source 2,nrpn,1,1,0,16,0,manual,0
+nrpn_1_2,Mod matrix,Mod Slot 1 Depth,nrpn,1,2,0,127,64,manual,0
+nrpn_1_3,Mod matrix,Mod Slot 1 Destination,nrpn,1,3,0,36,0,manual,0
+nrpn_2_0,Mod matrix,Mod Slot 2 Source 1,nrpn,2,0,0,16,0,manual,0
+nrpn_2_1,Mod matrix,Mod Slot 2 Source 2,nrpn,2,1,0,16,0,manual,0
+nrpn_2_2,Mod matrix,Mod Slot 2 Depth,nrpn,2,2,0,127,64,manual,0
+nrpn_2_3,Mod matrix,Mod Slot 2 Destination,nrpn,2,3,0,36,0,manual,0
+nrpn_3_0,Mod matrix,Mod Slot 3 Source 1,nrpn,3,0,0,16,0,manual,0
+nrpn_3_1,Mod matrix,Mod Slot 3 Source 2,nrpn,3,1,0,16,0,manual,0
+nrpn_3_2,Mod matrix,Mod Slot 3 Depth,nrpn,3,2,0,127,64,manual,0
+nrpn_3_3,Mod matrix,Mod Slot 3 Destination,nrpn,3,3,0,36,0,manual,0
+nrpn_4_0,Mod matrix,Mod Slot 4 Source 1,nrpn,4,0,0,16,0,manual,0
+nrpn_4_1,Mod matrix,Mod Slot 4 Source 2,nrpn,4,1,0,16,0,manual,0
+nrpn_4_2,Mod matrix,Mod Slot 4 Depth,nrpn,4,2,0,127,64,manual,0
+nrpn_4_3,Mod matrix,Mod Slot 4 Destination,nrpn,4,3,0,36,0,manual,0
+nrpn_5_0,Mod matrix,Mod Slot 5 Source 1,nrpn,5,0,0,16,0,manual,0
+nrpn_5_1,Mod matrix,Mod Slot 5 Source 2,nrpn,5,1,0,16,0,manual,0
+nrpn_5_2,Mod matrix,Mod Slot 5 Depth,nrpn,5,2,0,127,64,manual,0
+nrpn_5_3,Mod matrix,Mod Slot 5 Destination,nrpn,5,3,0,36,0,manual,0
+nrpn_6_0,Mod matrix,Mod Slot 6 Source 1,nrpn,6,0,0,16,0,manual,0
+nrpn_6_1,Mod matrix,Mod Slot 6 Source 2,nrpn,6,1,0,16,0,manual,0
+nrpn_6_2,Mod matrix,Mod Slot 6 Depth,nrpn,6,2,0,127,64,manual,0
+nrpn_6_3,Mod matrix,Mod Slot 6 Destination,nrpn,6,3,0,36,0,manual,0
+nrpn_7_0,Mod matrix,Mod Slot 7 Source 1,nrpn,7,0,0,16,0,manual,0
+nrpn_7_1,Mod matrix,Mod Slot 7 Source 2,nrpn,7,1,0,16,0,manual,0
+nrpn_7_2,Mod matrix,Mod Slot 7 Depth,nrpn,7,2,0,127,64,manual,0
+nrpn_7_3,Mod matrix,Mod Slot 7 Destination,nrpn,7,3,0,36,0,manual,0
+nrpn_8_0,Mod matrix,Mod Slot 8 Source 1,nrpn,8,0,0,16,0,manual,0
+nrpn_8_1,Mod matrix,Mod Slot 8 Source 2,nrpn,8,1,0,16,0,manual,0
+nrpn_8_2,Mod matrix,Mod Slot 8 Depth,nrpn,8,2,0,127,64,manual,0
+nrpn_8_3,Mod matrix,Mod Slot 8 Destination,nrpn,8,3,0,36,0,manual,0
+nrpn_9_0,Mod matrix,Mod Slot 9 Source 1,nrpn,9,0,0,16,0,manual,0
+nrpn_9_1,Mod matrix,Mod Slot 9 Source 2,nrpn,9,1,0,16,0,manual,0
+nrpn_9_2,Mod matrix,Mod Slot 9 Depth,nrpn,9,2,0,127,64,manual,0
+nrpn_9_3,Mod matrix,Mod Slot 9 Destination,nrpn,9,3,0,36,0,manual,0
+nrpn_10_0,Mod matrix,Mod Slot 10 Source 1,nrpn,10,0,0,16,0,manual,0
+nrpn_10_1,Mod matrix,Mod Slot 10 Source 2,nrpn,10,1,0,16,0,manual,0
+nrpn_10_2,Mod matrix,Mod Slot 10 Depth,nrpn,10,2,0,127,64,manual,0
+nrpn_10_3,Mod matrix,Mod Slot 10 Destination,nrpn,10,3,0,36,0,manual,0
+nrpn_11_0,Mod matrix,Mod Slot 11 Source 1,nrpn,11,0,0,16,0,manual,0
+nrpn_11_1,Mod matrix,Mod Slot 11 Source 2,nrpn,11,1,0,16,0,manual,0
+nrpn_11_2,Mod matrix,Mod Slot 11 Depth,nrpn,11,2,0,127,64,manual,0
+nrpn_11_3,Mod matrix,Mod Slot 11 Destination,nrpn,11,3,0,36,0,manual,0
+nrpn_12_0,Mod matrix,Mod Slot 12 Source 1,nrpn,12,0,0,16,0,manual,0
+nrpn_12_1,Mod matrix,Mod Slot 12 Source 2,nrpn,12,1,0,16,0,manual,0
+nrpn_12_2,Mod matrix,Mod Slot 12 Depth,nrpn,12,2,0,127,64,manual,0
+nrpn_12_3,Mod matrix,Mod Slot 12 Destination,nrpn,12,3,0,36,0,manual,0
+nrpn_13_0,Mod matrix,Mod Slot 13 Source 1,nrpn,13,0,0,16,0,manual,0
+nrpn_13_1,Mod matrix,Mod Slot 13 Source 2,nrpn,13,1,0,16,0,manual,0
+nrpn_13_2,Mod matrix,Mod Slot 13 Depth,nrpn,13,2,0,127,64,manual,0
+nrpn_13_3,Mod matrix,Mod Slot 13 Destination,nrpn,13,3,0,36,0,manual,0
+nrpn_14_0,Mod matrix,Mod Slot 14 Source 1,nrpn,14,0,0,16,0,manual,0
+nrpn_14_1,Mod matrix,Mod Slot 14 Source 2,nrpn,14,1,0,16,0,manual,0
+nrpn_14_2,Mod matrix,Mod Slot 14 Depth,nrpn,14,2,0,127,64,manual,0
+nrpn_14_3,Mod matrix,Mod Slot 14 Destination,nrpn,14,3,0,36,0,manual,0
+nrpn_15_0,Mod matrix,Mod Slot 15 Source 1,nrpn,15,0,0,16,0,manual,0
+nrpn_15_1,Mod matrix,Mod Slot 15 Source 2,nrpn,15,1,0,16,0,manual,0
+nrpn_15_2,Mod matrix,Mod Slot 15 Depth,nrpn,15,2,0,127,64,manual,0
+nrpn_15_3,Mod matrix,Mod Slot 15 Destination,nrpn,15,3,0,36,0,manual,0
+nrpn_16_0,Mod matrix,Mod Slot 16 Source 1,nrpn,16,0,0,16,0,manual,0
+nrpn_16_1,Mod matrix,Mod Slot 16 Source 2,nrpn,16,1,0,16,0,manual,0
+nrpn_16_2,Mod matrix,Mod Slot 16 Depth,nrpn,16,2,0,127,64,manual,0
+nrpn_16_3,Mod matrix,Mod Slot 16 Destination,nrpn,16,3,0,36,0,manual,0
