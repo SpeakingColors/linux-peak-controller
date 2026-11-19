@@ -1,6 +1,29 @@
-# Novation Peak: MIDI parameters (firmware 1.2)
+# Novation Peak: MIDI parameters (firmware 1.2, plus 2.1 additions)
 
 Source tag for every row on this page: official: Novation Peak User Guide for firmware 1.2, "MIDI parameters list" (printed pages 40 to 43). Checked again against the guide's PDF on 2026-11-15: every CC and NRPN number in the plugin's map matches the guide. Nothing here has been tested on real hardware ("untested on hardware"). Novation publishes no SysEx documentation for the Peak, so the plugin sends no SysEx. NRPN numbers are written exactly as the manual prints them (for example `0:2`). Rows marked "pair" use two CCs; the manual does not say which is coarse and which is fine, so test it. The plugin reads each NRPN as MSB:LSB sent with CC 99 / CC 98 and data on CC 6 (the standard NRPN form); this is not confirmed on the device. Pair rows stay unsent until the order is documented or captured.
+
+## Verification record
+
+Checked on 2026-11-19 against two Novation PDFs: "Peak 1.2 Manual - English" (MIDI parameters list, printed pages 40 to 43) and "Summit and Peak Firmware Update - Version 2.1 Addendum" (MIDI Parameters List, page 18). Result: all 229 rows of the 1.2 list are in `map/params.csv` with the same CC or NRPN numbers, and every single-CC and NRPN range matches the manual. The only differences are the 18 "pair" rows, which the manual prints as 0-255 (or 28-228, 1-255); the plugin does not send pair rows, so their range in the map is a placeholder. The manual does not say which CC of a pair is coarse and which is fine. Status of everything below: documented, untested on hardware.
+
+## Added from the firmware 2.1 addendum (documented, untested; need firmware 2.1 or newer)
+
+| Parameter | NRPN | Range | Default |
+|---|---|---|---|
+| Pan Position | 0:51 | 0-127 | 0 |
+| Pan Type | 0:52 | 0-3 | 0 |
+| Lo-Fi Delay Time Mode | 0:98 | 0-4 | 0 |
+| Chorus / Phaser / Flanger select | 0:115 | 0-2 | 0 |
+| Select Tuning Table | 25:6 | 0-16 | 0 |
+| Arp Chance | 25:33 | 1-100 (printed "01-100") | 100 |
+| Animate 1 Attack / Release | 25:34 / 25:35 | 0-127 | 0 |
+| Animate 2 Attack / Release | 25:36 / 25:37 | 0-127 | 0 |
+| LFO 3 Phase / Slew / Fade Time | 25:38 / 25:39 / 25:40 | 0-120 / 0-127 / 0-127 | 0 |
+| LFO 4 Phase / Slew / Fade Time | 25:41 / 25:42 / 25:43 | 0-120 / 0-127 / 0-127 | 0 |
+| Aftertouch Scale | 64:3 | 1-10 | 5 |
+| Patch Cue | 64:0 | 0-1 | 0 |
+
+The addendum also lists Spread as NRPN 0:5 (0-127); that is the existing "Voice Unison Spread" row.
 
 Settings that matter for the controller (Settings menu): MidiChan (default 1), Local, Arp>Midi, CC/NRPN (Disabled, Receive, Transmit, Rec+Tran; default Rec+Tran), Bank/Patch (same options). Patch data is sent as Program Change and Bank Change, not CC/NRPN. Patch backup goes over SysEx (Settings, Backup page).
 

@@ -228,3 +228,21 @@ nrpn_16_0,Mod matrix,Mod Slot 16 Source 1,nrpn,16,0,0,16,0,manual,0
 nrpn_16_1,Mod matrix,Mod Slot 16 Source 2,nrpn,16,1,0,16,0,manual,0
 nrpn_16_2,Mod matrix,Mod Slot 16 Depth,nrpn,16,2,0,127,64,manual,0
 nrpn_16_3,Mod matrix,Mod Slot 16 Destination,nrpn,16,3,0,36,0,manual,0
+nrpn_0_51,Effects,Pan Position (fw 2.1),nrpn,0,51,0,127,0,manual,0
+nrpn_0_52,Effects,Pan Type (fw 2.1),nrpn,0,52,0,3,0,manual,0
+nrpn_0_98,Effects,Lo-Fi Delay Time Mode (fw 2.1),nrpn,0,98,0,4,0,manual,0
+nrpn_0_115,Effects,Chorus Phaser Flanger Select (fw 2.1),nrpn,0,115,0,2,0,manual,0
+nrpn_25_6,Global (fw 2.1),Select Tuning Table (fw 2.1),nrpn,25,6,0,16,0,manual,0
+nrpn_25_33,Arpeggiator and Animate,Arp Chance (fw 2.1),nrpn,25,33,1,100,100,manual,0
+nrpn_25_34,Arpeggiator and Animate,Animate 1 Attack (fw 2.1),nrpn,25,34,0,127,0,manual,0
+nrpn_25_35,Arpeggiator and Animate,Animate 1 Release (fw 2.1),nrpn,25,35,0,127,0,manual,0
+nrpn_25_36,Arpeggiator and Animate,Animate 2 Attack (fw 2.1),nrpn,25,36,0,127,0,manual,0
+nrpn_25_37,Arpeggiator and Animate,Animate 2 Release (fw 2.1),nrpn,25,37,0,127,0,manual,0
+nrpn_25_38,LFOs 3 and 4 (fw 2.1),LFO 3 Phase (fw 2.1),nrpn,25,38,0,120,0,manual,0
+nrpn_25_39,LFOs 3 and 4 (fw 2.1),LFO 3 Slew (fw 2.1),nrpn,25,39,0,127,0,manual,0
+nrpn_25_40,LFOs 3 and 4 (fw 2.1),LFO 3 Fade Time (fw 2.1),nrpn,25,40,0,127,0,manual,0
+nrpn_25_41,LFOs 3 and 4 (fw 2.1),LFO 4 Phase (fw 2.1),nrpn,25,41,0,120,0,manual,0
+nrpn_25_42,LFOs 3 and 4 (fw 2.1),LFO 4 Slew (fw 2.1),nrpn,25,42,0,127,0,manual,0
+nrpn_25_43,LFOs 3 and 4 (fw 2.1),LFO 4 Fade Time (fw 2.1),nrpn,25,43,0,127,0,manual,0
+nrpn_64_3,Global (fw 2.1),Aftertouch Scale (fw 2.1),nrpn,64,3,1,10,5,manual,0
+nrpn_64_0,Global (fw 2.1),Patch Cue (fw 2.1),nrpn,64,0,0,1,0,manual,0
